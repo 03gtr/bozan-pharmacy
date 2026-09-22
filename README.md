@@ -16,3 +16,7 @@ One-page mobile-first website for BOZAN PHARMACY.
 ## GitHub Pages
 Upload the contents to the `main` branch, then enable GitHub Pages from:
 Settings → Pages → Deploy from a branch → `main` → `/ (root)`.
+
+
+## Credit
+The page includes a subtle `Website by IQ GROUP` credit in the footer.
