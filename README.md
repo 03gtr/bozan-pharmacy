@@ -2,19 +2,17 @@
 
 One-page mobile-first website for BOZAN PHARMACY.
 
-## Files
+## Included
 - `index.html` — complete website
 - `assets/bozan-logo.jpg` — supplied pharmacy logo
 
-## Deploy on GitHub Pages
-1. Upload `index.html` and the `assets` folder to the repository.
-2. Commit to the `main` branch.
-3. GitHub → Settings → Pages.
-4. Select `Deploy from a branch`.
-5. Select `main` and `/ (root)`.
-6. Save.
+## Current UX
+- One direct WhatsApp button per pharmacist (no duplicate phone + WhatsApp buttons).
+- Dedicated delivery CTA opening WhatsApp with a pre-filled delivery request.
+- Google Maps location.
+- Instagram profile.
+- No redundant QR code inside the page: the page itself is intended to be opened from the printed/external QR.
 
-## QR behavior
-The QR code is generated from `window.location.href`, so it points to the final deployed page URL automatically.
-
-Note: the QR generator library is loaded from cdnjs. If you want a fully offline/no-CDN version, replace it with a local QR library.
+## GitHub Pages
+Upload the contents to the `main` branch, then enable GitHub Pages from:
+Settings → Pages → Deploy from a branch → `main` → `/ (root)`.

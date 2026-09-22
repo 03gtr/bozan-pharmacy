@@ -205,6 +205,25 @@
       border-color: rgba(242,41,130,.65);
     }
 
+    .whatsapp-btn {
+      min-width: 108px;
+      height: 45px;
+      padding: 0 14px;
+      border-radius: 15px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      background: rgba(242,41,130,.14);
+      border: 1px solid rgba(242,41,130,.28);
+      color: #fff;
+      font-family: "Montserrat", sans-serif;
+      font-size: 11px;
+      font-weight: 800;
+    }
+
+    .whatsapp-btn svg { width: 18px; height: 18px; color: var(--pink-soft); }
+
     .icon-btn {
       width: 45px;
       height: 45px;
@@ -271,45 +290,6 @@
       line-height: 1;
     }
 
-    .qr-card {
-      margin-top: 24px;
-      padding: 22px 18px 20px;
-      text-align: center;
-      border-radius: 24px;
-      border: 1px solid rgba(242,41,130,.24);
-      background:
-        radial-gradient(circle at 50% 0%, rgba(242,41,130,.13), transparent 55%),
-        rgba(255,255,255,.035);
-    }
-
-    .qr-label {
-      font-size: 15px;
-      font-weight: 800;
-      margin-bottom: 3px;
-    }
-
-    .qr-hint {
-      color: #9999a2;
-      font-size: 11px;
-      margin-bottom: 15px;
-    }
-
-    #qrcode {
-      width: 180px;
-      height: 180px;
-      padding: 9px;
-      margin: 0 auto;
-      background: #fff;
-      border-radius: 18px;
-      display: grid;
-      place-items: center;
-    }
-
-    #qrcode img, #qrcode canvas {
-      max-width: 100%;
-      max-height: 100%;
-    }
-
     footer {
       padding: 28px 8px 4px;
       text-align: center;
@@ -363,7 +343,7 @@
       <h1>BOZAN PHARMACY</h1>
       <p class="tagline">صيدلية بوزان — صحتكم أولويتنا</p>
       <p class="intro">
-        تواصل مباشرة مع الصيادلة، اعثر على موقعنا، وتابعنا على Instagram.
+        تواصل مباشرة عبر WhatsApp، اطلب خدمة التوصيل، واعثر على موقع الصيدلية.
       </p>
     </header>
 
@@ -376,13 +356,9 @@
           <div class="name">د. لاوين</div>
           <div class="phone">0750 766 3567</div>
         </div>
-        <div class="actions">
-          <a class="icon-btn" href="tel:+9647507663567" aria-label="اتصال بد. لاوين" title="اتصال">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/>
-            </svg>
-          </a>
-          <a class="icon-btn" href="https://wa.me/9647507663567" target="_blank" rel="noopener" aria-label="واتساب د. لاوين" title="WhatsApp">
+                <div class="actions">
+          <a class="whatsapp-btn" href="https://wa.me/9647507663567" target="_blank" rel="noopener" aria-label="WhatsApp د. لاوين">
+            <span>WhatsApp</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 11.5a8.38 8.38 0 0 1-9 8.38 8.5 8.5 0 0 1-4-.99L3 20l1.12-4.67A8.46 8.46 0 1 1 21 11.5Z"/>
               <path d="M8.6 8.3c.2-.4.4-.42.7-.42h.55c.2 0 .35.08.45.32l.55 1.33c.1.22.06.4-.1.57l-.48.55c-.1.12-.13.25-.05.4.33.6 1.06 1.38 1.78 1.72.16.08.3.05.41-.07l.5-.58c.14-.17.31-.2.52-.1l1.3.62c.24.12.34.25.31.47-.06.48-.32.92-.72 1.17-.37.23-.84.3-1.28.2-1.55-.35-3.16-1.63-4.2-2.9-.55-.68-1.08-1.55-1.2-2.17-.1-.46-.03-.83.16-1.11Z"/>
@@ -397,13 +373,9 @@
           <div class="name">د. گاڤان</div>
           <div class="phone">0750 863 0940</div>
         </div>
-        <div class="actions">
-          <a class="icon-btn" href="tel:+9647508630940" aria-label="اتصال بد. گاڤان" title="اتصال">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-              <path d="M22 16.92v3a2 2 0 0 1-2.18 2A19.8 19.8 0 0 1 3.08 5.18 2 2 0 0 1 5.06 3h3a2 2 0 0 1 2 1.72c.12.9.33 1.78.62 2.63a2 2 0 0 1-.45 2.11L9 10.73a16 16 0 0 0 4.27 4.27l1.27-1.27a2 2 0 0 1 2.11-.45c.85.29 1.73.5 2.63.62A2 2 0 0 1 22 16.92z"/>
-            </svg>
-          </a>
-          <a class="icon-btn" href="https://wa.me/9647508630940" target="_blank" rel="noopener" aria-label="واتساب د. گاڤان" title="WhatsApp">
+                <div class="actions">
+          <a class="whatsapp-btn" href="https://wa.me/9647508630940" target="_blank" rel="noopener" aria-label="WhatsApp د. گاڤان">
+            <span>WhatsApp</span>
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
               <path d="M21 11.5a8.38 8.38 0 0 1-9 8.38 8.5 8.5 0 0 1-4-.99L3 20l1.12-4.67A8.46 8.46 0 1 1 21 11.5Z"/>
               <path d="M8.6 8.3c.2-.4.4-.42.7-.42h.55c.2 0 .35.08.45.32l.55 1.33c.1.22.06.4-.1.57l-.48.55c-.1.12-.13.25-.05.4.33.6 1.06 1.38 1.78 1.72.16.08.3.05.41-.07l.5-.58c.14-.17.31-.2.52-.1l1.3.62c.24.12.34.25.31.47-.06.48-.32.92-.72 1.17-.37.23-.84.3-1.28.2-1.55-.35-3.16-1.63-4.2-2.9-.55-.68-1.08-1.55-1.2-2.17-.1-.46-.03-.83.16-1.11Z"/>
@@ -413,9 +385,25 @@
       </div>
     </section>
 
-    <div class="section-title">روابط الصيدلية</div>
+    <div class="section-title">خدمات وروابط الصيدلية</div>
 
     <section class="links">
+      <a class="main-btn delivery" href="https://wa.me/9647507663567?text=%D9%85%D8%B1%D8%AD%D8%A8%D8%A7%D9%8B%D8%8C%20%D8%A3%D8%B1%D9%8A%D8%AF%20%D8%B7%D9%84%D8%A8%20%D8%AA%D9%88%D8%B5%D9%8A%D9%84" target="_blank" rel="noopener">
+        <span class="symbol">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M3 7h11v10H3z"/>
+            <path d="M14 10h4l3 3v4h-7z"/>
+            <circle cx="7" cy="19" r="2"/>
+            <circle cx="18" cy="19" r="2"/>
+          </svg>
+        </span>
+        <span class="btn-copy">
+          <span class="btn-title">خدمة التوصيل</span>
+          <span class="btn-sub">اطلب الآن عبر WhatsApp</span>
+        </span>
+        <span class="arrow">‹</span>
+      </a>
+
       <a class="main-btn" href="https://maps.app.goo.gl/nCkDEh2tCgD8B2Ay8?g_st=ac" target="_blank" rel="noopener">
         <span class="symbol">
           <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
@@ -446,12 +434,6 @@
       </a>
     </section>
 
-    <section class="qr-card">
-      <div class="qr-label">شارك صفحة الصيدلية</div>
-      <div class="qr-hint">امسح الـ QR Code لفتح صفحة BOZAN PHARMACY</div>
-      <div id="qrcode" aria-label="QR code"></div>
-    </section>
-
     <footer>
       <strong>BOZAN PHARMACY</strong><br>
       CARE YOU CAN TRUST<br><br>
@@ -460,29 +442,5 @@
   </main>
 
   <div class="toast" id="toast">تم نسخ الرابط</div>
-
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/qrcodejs/1.0.0/qrcode.min.js"></script>
-  <script>
-    // The QR automatically points to the current deployed page URL.
-    // This means the QR does not need to be regenerated after moving
-    // the site to its final GitHub Pages address.
-    const pageUrl = window.location.href.split('#')[0];
-    new QRCode(document.getElementById("qrcode"), {
-      text: pageUrl,
-      width: 162,
-      height: 162,
-      colorDark: "#111111",
-      colorLight: "#ffffff",
-      correctLevel: QRCode.CorrectLevel.H
-    });
-
-    // Small mobile-friendly feedback when copying the page URL.
-    function showToast(message) {
-      const toast = document.getElementById("toast");
-      toast.textContent = message;
-      toast.classList.add("show");
-      setTimeout(() => toast.classList.remove("show"), 1800);
-    }
-  </script>
 </body>
 </html>
